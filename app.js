@@ -4,7 +4,6 @@ function calcButton(num) {
     $('.display').val($('.display').val() + num);
 }
 
-
 //Laskee näytöllä olevan lasku toimituksen "=" nappia painamalla
 function yhtaSuuri() {
     $('.display').val(eval($('.display').val()));
