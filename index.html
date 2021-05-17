@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laskin</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <form>
+            <input class="display">
+        </form>
+        <table>
+            <td><input type="button"  value="1" class="fade1" onclick="calcButton(1)"> </td>
+            <td><input type="button" value="2" class="fade2" onclick="calcButton(2)"> </td>
+            <td><input type="button" value="3" class="fade3" onclick="calcButton(3)"> </td>  
+            <td><input type="button" value="-" class="fade-" onclick="calcButton('-')"> </td>
+            <td><input type="button" value="x" class="fadex" onclick="calcButton('*')">  </td>     
+        </table>
+        <table>
+            <td><input type="button" value="4" class="fade4" onclick="calcButton(4)"> </td>
+            <td><input type="button" value="5" class="fade5" onclick="calcButton(5)"> </td>
+            <td><input type="button" value="6" class="fade6" onclick="calcButton(6)"> </td> 
+            <td><input type="button" value="+" class="fadeplus" onclick="calcButton('+')"> </td> 
+            <td><input type="button" value="/" class="fadediv" onclick="calcButton('/')"> </td>     
+        </table>
+        <table>
+            <td><input type="button" value="7" class="fade7" onclick="calcButton(7)"> </td>
+            <td><input type="button" value="8" class="fade8" onclick="calcButton(8)"> </td>
+            <td><input type="button" value="9" class="fade9" onclick="calcButton(9)"> </td>   
+            <td><input type="button" value="=" class="fadeeq" onclick="yhtaSuuri()"> </td>   
+        </table>
+        <table>
+            <td><input type="button" value="0" class="fade0" onclick="calcButton(0)"> </td>   
+            <td><input type="button" value="." class="fadedot" onclick="calcButton('.')"> </td>
+            <td><input type="button" value="C" class="fadeC" onclick="tyhjenna()"> </td>  
+            
+        </table>
+    </div>
+    <div class="footer">
+        Justus Kovalainen 2021
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
